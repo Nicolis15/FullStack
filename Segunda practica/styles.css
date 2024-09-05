@@ -1,0 +1,73 @@
+:root{
+    --Gray : #d8d8d8;
+    --Red : #f96b6b;
+    --Gradient : linear-gradient(30deg,#f96b6b,#d8d8d8)
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+
+}
+
+.container{
+    width: 400px;
+    height: 95vh;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--Gray);
+    box-shadow: -1px -1px 20px var(--Red);
+}
+
+form{
+    align-items: center;
+    background-color: var(--Gray);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.form-titulo{
+    font-size: 24px;
+    background: var(--Gray);
+    color: var(--Red);
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--Red);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--Red);
+    outline: none;
+}
+
+input::placeholder{
+    color: var(--Red);
+}
+button{
+    padding: 8px;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    box-shadow:  0 1px 12px rgba(0, 0, 0, 0.1);
+    background-color: var(--Red);
+    transition : all 0.3s linear;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+/*
+.bn_descargar{
+    display: none;
+}*/
