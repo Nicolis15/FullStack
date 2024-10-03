@@ -8,53 +8,54 @@
 </head>
 <body>
     <div class="contenedor">
-        <h1>Crear Hoja de vida</h1>
+        <h1>Crear Hoja de Vida</h1>
         <form action="#">
             <div class="primero">
                 <div class="formularios">
-                    <label for="Nomre">Nombre</label>
-                    <input type="text">
-                </div>
-
-                <div class="formularios">
-                    <label for="Email">Email</label>
-                    <input type="text">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
                 </div>
                 <div class="formularios">
-                    <label for="Tipo de documento">Tipo de documento</label>
-                    <select name="" id="seleccione">
-                        <option value="CC">Cedula de ciudadania</option>
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="formularios">
+                    <label for="seleccione">Tipo de documento</label>
+                    <select id="seleccione">
+                        <option value="CC">Cédula de ciudadanía</option>
                         <option value="TI">Tarjeta de identidad</option>
-                        <option value="CE">Cedula extrangeria</option>
+                        <option value="CE">Cédula extranjera</option>
                     </select>
                 </div>
             </div>
 
             <div class="segundo">  
                 <div class="formularios">
-                    <label for="Apellido">Apellido</label>
-                    <input type="text">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido">
                 </div>
-
                 <div class="formularios">
-                    <label for="Numero de contacto">Numero de contacto</label>
-                    <input type="text">
+                    <label for="numero_contacto">Número de contacto</label>
+                    <input type="text" id="numero_contacto">
                 </div>
-
                 <div class="formularios">
-                    <label for="Numero">Numero</label>
-                    <input type="number">
+                    <label for="numero">Número</label>
+                    <input type="number" id="numero">
                 </div>
             </div>
         </form>
 
         <div class="formularios">
-            <label for="Perfil">Perfil Profecional</label>
-            <textarea name="Perfil Profecional" id="Perfil"></textarea>
+            <label for="perfil">Perfil Profesional</label>
+            <textarea id="perfil"></textarea>
         </div>
+
         <div class="button">
-            <button>Crear Hoja de vida</button>
+            <button onclick="obtenerDatos()">Crear Hoja de Vida</button>
         </div>
     </div>
+
+    <script src="funciones.js"></script>
+
 </body>
 </html>

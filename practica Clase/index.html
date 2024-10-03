@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Full stack</h1>
+    <h2>Ingenieria de sistemas</h2>
+    <h2 onclick="holaGono(this)">Cambiar</h2>
+
+    <button onclick="displayDay()">
+        Hola perros
+    </button>
+    <button onclick="quitarFecha()">Quitar fecha</button>
+    <button onclick="verificarCo()">verificar</button>
+    <button onclick="sePuso()">Poner</button>
+
+    <input type="text" id="name" oninput="upperCase()">
+
+    <span id="fecha"></span>
+    <p id="coockies"></p>
+
+    <script>
+        function holaGono(id){
+            id.innerHTML = 'Se cambio el texto';
+        }
+        function quitarFecha(){
+            document.getElementById("fecha").innerHTML= "";
+        }
+        function displayDay(){
+            document.getElementById("fecha").innerHTML= Date();
+        }
+
+        function upperCase(){
+            const x = document. getElementById('name')
+            console.log(x.value)
+            x.value = x.value.toUpperCase();
+        }
+
+        function verificarCo(){
+            let texto = ''
+            if(navigator.cookieEnabled==true){
+                texto = 'Se cambio las coockies'
+            }else{
+                texto = 'Las cookies estan deshabilitadas'
+            }
+            document.getElementById('coockies').innerHTML = texto
+        }
+    </script>
+</body>
+</html>
